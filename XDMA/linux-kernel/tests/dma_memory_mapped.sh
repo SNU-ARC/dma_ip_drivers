@@ -14,8 +14,8 @@ echo "Info: Running PCIe DMA memory mapped write read test"
 # Write to all enabled h2cChannels in parallel
 if [ $h2cChannels -gt 0 ]; then
   echo "Info: Writing to h2c channel."
-#  $tool_path/load_elf /dev/xdma0_h2c_0 /dev/xdma0_c2h_0 data/boot.elf
-  $tool_path/load_elf /dev/xdma0_h2c_0 /dev/xdma0_c2h_0 data/boot.elf.new 
+  $tool_path/load_elf /dev/xdma0_h2c_0 /dev/xdma0_c2h_0 data/boot.elf
+#  $tool_path/load_elf /dev/xdma0_h2c_0 /dev/xdma0_c2h_0 data/boot.elf.new 
 fi
 
 # Wait for the last transaction to complete.
